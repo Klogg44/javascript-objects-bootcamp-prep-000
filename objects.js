@@ -2,6 +2,10 @@ var playlist = { SmashMouth: 'Rockstar' };
 
 function updatePlaylist (obj, name, title) {
   obj[name] = title;
+  return obj
 }
 
-function 
+function removeFromPlaylist (obj, name) {
+  delete obj.name
+  return obj
+}

@@ -5,8 +5,8 @@ function updatePlaylist (obj, name, title) {
   return obj
 }
 
-function removeFromPlaylist (obj, name) {
-  var newPlaylist = Object.assign(obj);
-  delete newPlaylist.name;
+function removeFromPlaylist (playlist, artistName) {
+  var newPlaylist = Object.assign({}, playlist);
+  delete newPlaylist.artistName;
   return newPlaylist
 }
